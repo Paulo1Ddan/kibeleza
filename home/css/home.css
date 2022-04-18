@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+body{
+    min-height: 100vh;
+    max-width: 100%;
+    font-family: 'Poppins' !important;
+    background: url("../../assets/dust_scratches.png");
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+/* Cabecalho */
+/* Topo */
+/* Slick */
+.slick-prev
+{
+    left: 15px;
+    z-index: 99;
+}
+.slick-next::before,
+.slick-prev::before{
+    font-size: 30px;
+    color: #948ebf;
+}
+.slick-next
+{
+    right: 25px;
+}
+/* Banner */
+#banner{
+    width: 100%;
+    height: 500px;
+}
+#banner img{
+    width: 100%;
+    height: 500px;
+    background: cornflowerblue;
+    object-fit: cover;
+}
+
+/* Sobre */
+.sobre {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 100%;
+    max-height: auto;
+}
+.sobre img{
+    margin: 1rem;
+    width: 500px;
+    height: 350px;
+    border-radius: 0 15px 0 25px;
+    object-fit: cover;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.sobre .topo{
+    align-items: flex-start;
+}
+.sobre .textoSobre{
+    display: flex;
+    flex-direction: column;
+    max-width: 690px;
+    padding: 0 10px;
+    width: 100%;
+    max-height: 500px;
+    height: 370px;
+    justify-content: space-between;
+}
+.sobre h2{
+    width: 100%;
+    font-size: 24pt;
+    font-weight: 600;
+    text-align: left;
+}
+.sobre p{
+    margin: 10px 0;
+    width: 100%;
+    font-size: 1rem;
+    text-align: justify;
+}
+.sobre .textoSobre div{
+    margin:10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.sobre .textoSobre a button{
+    width: 150px;
+    height: 50px;
+    background: #8B63A6;
+    border: none;
+    border-radius: 5px 0 5px 0;
+    transition: all 0.1s ease;
+    border: #a64941 1px solid;
+    font-size: 15pt;
+}
+
+.sobre .textoSobre a button:hover{
+    background: #9a74b3;
+    cursor: pointer;
+}
+.sobre .textoSobre a button:active{
+    background: #706279;
+    transition: all 0.1s ease-in-out;
+}
+
+/* Servicos */
+.servicos{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+    background-image: url(../../assets/bannerCarrosel//banner3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.servicos .txtServicos{
+    text-align: center;
+    color: white;
+    margin: 2rem;
+    background: rgba(0,0,0,0.4);
+}
+
+.servicos .site h2{
+
+    text-align: center;
+    font-size: 35px;
+}
+.servicos .site hr{
+    height: 5px;
+    width: 80%;
+    background: #262626;
+}
+.servicos .site .containerServicos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.servicos .site .containerServicos .conteudo{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+}
+.servicos .site .containerServicos .conteudo img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    background: deeppink;
+}
+.servicos .containerServicos .conteudo .textoServico h3{
+    font-size: 23px;
+    font-weight: bolder;
+    text-align: center;
+}
+.servicos .containerServicos .conteudo .textoServico p{
+    margin-top: 10px;
+    text-align: center;
+}
+/* Destaques */
+.destaque{
+    background: chartreuse;
+    width: 100%;
+    height: 400px;
+    background: url('../../assets/destaques/destaque.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destaque .play{
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+/* Equipe */
+.equipe {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.equipe .site h2 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 25pt;
+}
+.equipe .site p {
+    margin: 15px 0 20px 0;
+    text-align: center;
+}
+.equipe .site .conteudoEquipe {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.equipe .site .conteudoEquipe div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+}
+.equipe .site .conteudoEquipe div img {
+    width: 250px;
+    height: 250px;
+    background: deeppink;
+    display: flex;
+    border-radius: 50%;
+    margin: 0px 20px
+}
+.equipe .site .conteudoEquipe div h3 {
+    margin: 10px 0;
+    font-family: 'Lobster', cursive;
+    font-size: 20pt;
+}
+
+/* Galeria */
+#galeria{
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#galeria img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin: 0 10px;
+}
+
+/* Depoimento */
+#depoimentos{
+    width: 100;
+    min-height: 600px;
+    background: #000 url("../../assets/depoimentos/background.jpeg") no-repeat;
+    background-position-y: -250px;
+    padding: 2rem;
+}
+#depoimentos .site{
+    color: #fff;
+    font-size: 20pt;
+    display:flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#depoimentos .site .txtDepoimento{
+    line-height: 36pt;
+    text-align: center;
+}
+#depoimentos .site .autor{
+    text-align: end;
+    font-style: italic;
+}
+/* News */
+#news{
+    min-height: 800px;
+    background: url("../../assets/news/background.png") no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+#news h3{
+    font-size: 28pt;
+    text-align: center;
+    font-weight: 600;
+}
+#news .conteudoNoticias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#news .conteudoNoticias .noticia{
+    background: rgb(255, 255, 255, 0.4);
+    margin-top: 1.4rem;
+    max-width: 300px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#news .conteudoNoticias .noticia .imgNoticia{
+    width: 300px;
+    height: 400px;
+}
+#news .conteudoNoticias .noticia .imgNoticia img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+#news .conteudoNoticias .noticia .txtNoticia{
+    max-width: 300px;
+    padding: 25px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.5);
+}
+#news .conteudoNoticias .noticia .txtNoticia h3{
+    font-size: 1.5rem ;
+    color: black ;
+}
+#news .conteudoNoticias .noticia .txtNoticia p{
+    text-align: justify;
+}
+/* Rodapé */
+#info{
+    background: url("../../assets/rodape/background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    width: 100%;
+    color: white;
+    padding: 100px 0 60px 0;
+}
+#info h3{
+    font-size: 28pt;
+    font-weight: 600;
+}
+#info .site{
+    display: flex;
+    justify-content: center;
+}
+/* Info SObre */
+#info .infoSobre{
+    height: 420px;
+    width: 100%;
+    max-width: 480px;
+    padding-right: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#info .infoSobre img{
+    min-height: 140px;
+    width: 200px;
+}
+#info .infoSobre p{
+    width: 90%;
+    height: auto;
+    text-align: justify;
+    max-width: 470px;
+
+}
+#info .infoSobre .infoSobreSocial{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+#info .infoSobre .infoSobreSocial .iconInfoSocial{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: all 0.15s linear;
+}
+#info .infoSobre .infoSobreSocial .iconInfoSocial:hover{
+    background: #000;
+    color: #fff;
+}
+/* Info Links */
+#info .infoLinks{
+    min-height: 300px;
+    width: 480px;
+    text-align: center;
+}
+#info .infoLinks ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    margin-top: 40px;
+}
+#info .infoLinks ul a{
+    color: white;
+}
+/* Info Contato */
+#info .infoContato{
+    height: 420px;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 30px;
+}
+
+#info .infoContato .infoContatoTelefone{
+    display: flex;
+}
+#info .infoContato .infoContatoEmail{
+    display: flex;
+}
+#info .infoContato .infoContatoEndereco{
+    display: flex;
+}
+
+#info .infoContato .contatoIcone{
+    margin-right: 20px;
+    color: #000;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+#info .infoContato .txtInfoContato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.faixaBase{
+    background: #262626;
+    height: 100px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+@media screen and (max-width: 1180px){
+    /* Servicos */
+    .servicos .site .containerServicos .conteudo{
+        height: 350px;
+    }
+    .servicos .site .containerServicos .conteudo img{
+        width: 200px;
+        height: 250px;
+    }
+    /* Noticias */
+    #news .conteudoNoticias{
+        justify-content: center;
+    }
+    #news .conteudoNoticias .noticia{
+        margin: 2rem;
+    }
+    #news .conteudoNoticias .noticia .imgNoticia{
+        width: 300px;
+        height: 350px;
+    }
+    #news .conteudoNoticias .noticia .imgNoticia img{
+        width: 300px;
+        height: 350px;
+        object-fit: cover;
+    }
+    #news .conteudoNoticias .noticia .txtNoticia{
+        width: 250px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    /* Sobre */
+    .sobre img{
+        width: 450px;
+        height: 350px;
+    }
+    .sobre .textoSobre{
+        display: flex;
+        flex-direction: column;
+        max-width: 690px;
+        width: 100%;
+        height: 350px;
+        justify-content: space-between;
+    }
+    .sobre h2{
+        width: 100%;
+        margin: 10px;
+        font-size: 24pt;
+        font-weight: 600;
+        text-align: left;
+    }
+    .sobre p{
+        margin: 10px 0;
+        width: 100%;
+        text-align: justify;
+    }
+
+    /* Equipe */
+    .equipe .site .conteudoEquipe div img {
+        width: 200px;
+        height: 200px;
+    }
+    /* Rodapé */
+    #info .site{
+        flex-wrap: wrap;
+    }
+    #info .infoSobre{
+        padding: 0;
+        margin: 1rem;
+    }
+    #info .infoSobre p{
+        width: 100%;
+    }
+    #info .infoSobre .infoSobreSocial{
+        width: 100%;
+    }
+    #info .infoLinks{
+        height: 100px;
+        margin: 1rem;
+    }
+    #info .infoLinks ul{
+        flex-direction: row;
+    }
+    #info .infoContato .infoContatoTelefone{
+        justify-content: center;
+    }
+    #info .infoContato .infoContatoEmail{
+        justify-content: center;
+    }
+    #info .infoContato .infoContatoEndereco{
+        justify-content: center;
+    }
+    .faixaBase{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 850px){
+    .sobre .site .topo{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sobre h2{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 800px){
+    /* Sobre */
+
+    /* Galeria */
+    #galeria img{
+        height: 150px;
+        width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .faixa_vinho{
+        display: none;
+    }
+    /* Banner */
+    #banner{
+        height: 300px;
+    }
+    #banner img{
+        height: 300px;
+    }
+
+    /* SObre */
+    .sobre img{
+        width: 100%;
+        height: 200px;
+    }
+    /* Depoimentos */
+    #depoimentos{
+        min-height: 200px;
+    }
+    #depoimentos .site{
+        font-size: 20px;
+    }
+    /* Noticias */
+    #news .conteudoNoticias .noticia{
+        margin: 2rem;
+    }
+    #news .conteudoNoticias .noticia .imgNoticia{
+        width: 200px;
+        height: 250px;
+    }
+    #news .conteudoNoticias .noticia .imgNoticia img{
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+    #news .conteudoNoticias .noticia .txtNoticia{
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 360px){
+    .sobre img{
+        width: 240px;
+    }
+    #galeria img{
+        height: 100px;
+        width: 100px;
+    }
+    #info .infoContato{
+        padding: 0;
+    }
+    #info .infoLinks ul{
+        flex-direction: column;
+    }
+    #info .infoContato .contatoIcone{
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+    #info .infoContato .txtInfoContato{
+        font-size: 15px;
+    }
+    .faixaBase{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
