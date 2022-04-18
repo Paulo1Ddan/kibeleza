@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -30,6 +31,14 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	min-height: 100vh;
+    max-width: 100%;
+    font-family: 'Poppins';
+    background: url("../../assets/dust_scratches.png");
+}
+a{
+	text-decoration: none;
+	color: black;
 }
 ol, ul {
 	list-style: none;

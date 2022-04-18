@@ -1,0 +1,13 @@
+$(document).ready(function(){
+    $('.iconClose').hide()
+    $('.iconOpen').click(function(){
+        $('.navMenu').toggleClass('open')
+        $('.iconOpen').hide()
+        $('.iconClose').show()
+    })
+    $('.iconClose').click(function(){
+        $('.iconClose').hide()
+        $('.navMenu').toggleClass('open')
+        $('.iconOpen').show()
+    })
+})

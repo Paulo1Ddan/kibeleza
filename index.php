@@ -15,11 +15,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="lib/lity-2.4.1/dist/lity.css">
     <link rel="stylesheet" href="home/css/home.css">
+    <link rel="stylesheet" href="home/header/header.css">
+    <link rel="stylesheet" href="home/footer/footer.css">
 </head>
 
 <body>
     <!--CORPO DO SITE-->
-    <?php require_once('links/header/header.php')?>
+    <?php require_once('home/header/header.php') ?>
     <main>
         <!--COMEÇO DO CONTEUDO-->
         <section id="banner" class="banner">
@@ -184,70 +186,14 @@
         </section>
         <!--FIM DO CONTEUDO-->
     </main>
-    <footer>
-        <!--COMEÇO DO RODAPÉ-->
-        <section id="info">
-            <article class="site">
-                <div class="infoSobre">
-                    <h3>Sobre</h3>
-                    <img src="assets/logo/LogoKiBeleza.svg" alt="logoRodape">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae suscipit voluptates impedit
-                        error assumenda autem aliquid dicta minus eligendi optio? Error praesentium voluptatum cum omnis
-                        ab ratione ad nulla in.</p>
-                    <div class="infoSobreSocial">
-                        <a href="" class="iconInfoSocial"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="" class="iconInfoSocial"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="" class="iconInfoSocial"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="" class="iconInfoSocial"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                <div class="infoLinks">
-                    <h3>Links</h3>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Sobre</a></li>
-                        <li><a href="">Serviço</a></li>
-                        <li><a href="">News</a></li>
-                        <li><a href="">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="infoContato">
-                    <!-- Telefone -->
-                    <div class="infoContatoTelefone">
-                        <div class='contatoIcone'><i class="fa-solid fa-phone"></i></div>
-                        <div class="txtInfoContato">
-                            <p>+55 11 99999-9999</p>
-                            <p>+55 11 99999-9999</p>
-                        </div>
-                    </div>
-                    <!-- Email -->
-                    <div class="infoContatoEmail">
-                        <div class="contatoIcone"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="txtInfoContato">
-                            <p>contato@kibeleza.com.br</p>
-                        </div>
-                    </div>
-                    <!-- Endereço -->
-                    <div class="infoContatoEndereco">
-                        <div class="contatoIcone"><i class="fa-solid fa-location-dot"></i></div>
-                        <div class="txtInfoContato">
-                            <p>Av. Marechal Tito, 5000</p>
-                            <p>São Miguel Paulista - SP</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="faixaBase">
-            <p>&#169Todos os direitos reservados, 2022</p>
-        </section>
-        <!--FIM DO RODAPÉ-->
-        <!-- Animação do banner -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="home/js/slick/slick.min.js"></script>
-        <script src="home/js/homeScript.js"></script>
-        <script src="lib/lity-2.4.1/dist/lity.js"></script>
-    </footer>
+    <?php require_once "home/footer/footer.php"?>
+    <!--FIM DO RODAPÉ-->
+    <!-- Animação do banner -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="home/js/slick/slick.min.js"></script>
+    <script src="home/js/homeScript.js"></script>
+    <script src="lib/lity-2.4.1/dist/lity.js"></script>
+    <script src="home/header/header.js"></script>
 </body>
 
 </html>

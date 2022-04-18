@@ -133,3 +133,12 @@
         right: 0;
     }
 }
+@media screen and (max-width: 500px){
+    .topo .telefone{
+        display: none;
+    }
+    .topo .social{
+        width: 100%;
+        justify-content: center;
+    }
+}
