@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,12 @@
     <link rel="stylesheet" href="header/header.css">
     <link rel="stylesheet" href="footer/footer.css">
 </head>
+
 <body>
-    <?php require_once "header/header.php"?>
-    <?php require_once "footer/footer.php"?>
+    <?php require_once "header/header.php" ?>
+    <?php require_once "footer/footer.php" ?>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="header/header.js"></script>
 </body>
+
 </html>
