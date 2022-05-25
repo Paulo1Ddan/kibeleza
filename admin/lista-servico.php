@@ -13,7 +13,5 @@
     while ($r = $sqlServicos->fetch(PDO::FETCH_ASSOC)){
         array_push($json, $r);
     }
-
-    /* echo $json[0]["nomeServico"] */
     echo json_encode($json, JSON_UNESCAPED_UNICODE)
 ?>
