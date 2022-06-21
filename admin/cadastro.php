@@ -7,9 +7,13 @@
         $cadastro->setNome($objData->nome);
         $cadastro->setEmail($objData->email);
         $cadastro->setSenha($objData->senha);
-        
         $cadastro->cadastrarUsuario($cadastro->getNome(), $cadastro->getEmail(), $cadastro->getSenha());
     } catch (\Throwable $th){
-        echo "erro".$th->getMessage();
+        $jsonCadastro = array(
+            "statusMsg" => false,
+            "msg"=>'Não foi possível efetuar o cadastro'
+        );
+
+        echo json_encode($jsonCadastro);
     }
 ?>

@@ -27,28 +27,51 @@
 
         public function cadastrarUsuario($nome, $email, $senha){
             try{
-                $conn = Conexao::conexaoDB();
-                $data = date("Y-m-d");
-                $status = "Ativo";
-                $foto = "foto-usuario/default.png";
-                $sqlInsertCad = $conn->prepare("INSERT INTO cliente(nomeCliente, emailCliente, senhaCliente, statusCliente, dataCadCliente, fotoCliente) VALUES(:NOME, :EMAIL, :SENHA, '$status', '$data', '$foto')");
-                $sqlInsertCad->bindParam(":NOME", $nome);
-                $sqlInsertCad->bindParam(":EMAIL", $email);
-                $sqlInsertCad->bindParam(":SENHA", $senha);
-                if($sqlInsertCad->execute()){
+                if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
                     $jsonCadastro = array(
-                        "msg"=>'Cadastro efetuado com sucesso'
+                        "statusMsg" => false,
+                        "msg"=>'Insira um email válido!'
+                    );
+                    echo json_encode($jsonCadastro);
+                }else if(!preg_match('/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d].\S{8,36}$/', $senha)){
+                    $jsonCadastro = array(
+                        "statusMsg" => false,
+                        "msg"=>'Insira uma senha válida'
                     );
                     echo json_encode($jsonCadastro);
                 }else{
-                    $jsonCadastro = array(
-                        "msg"=>'Não foi possível efetuar o cadastro'
-                    );
-    
-                    echo json_encode($jsonCadastro);
+                    $conn = Conexao::conexaoDB();
+                    $data = date("Y-m-d");
+                    $status = "Ativo";
+                    $senha = sha1($senha);
+                    $foto = "foto-usuario/default.png";
+                    $sqlInsertCad = $conn->prepare("INSERT INTO cliente(noeCliente, emailCliente, senhaCliente, statusCliente, dataCadCliente, fotoCliente) VALUES(:NOME, :EMAIL, :SENHA, '$status', '$data', '$foto')");
+                    $sqlInsertCad->bindParam(":NOME", $nome);
+                    $sqlInsertCad->bindParam(":EMAIL", $email);
+                    $sqlInsertCad->bindParam(":SENHA", $senha);
+                    if($sqlInsertCad->execute()){
+                        $jsonCadastro = array(
+                            "statusMsg" => true,
+                            "msg"=>'Cadastro efetuado com sucesso'
+                        );
+                        echo json_encode($jsonCadastro);
+                    }else{
+                        $jsonCadastro = array(
+                            "statusMsg" => false,
+                            "msg"=>'Não foi possível efetuar o cadastro'
+                        );
+        
+                        echo json_encode($jsonCadastro);
+                    }
                 }
+
             }catch(PDOException $pdoe){
-                echo $pdoe->getMessage();
+                $jsonCadastro = array(
+                    "statusMsg" => false,
+                    "msg"=>'Não foi possível efetuar o cadastro'
+                );
+
+                echo json_encode($jsonCadastro);
             }
         }
     }
