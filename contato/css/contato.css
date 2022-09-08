@@ -1,0 +1,97 @@
+
+.frmContato{
+    margin-top: 20px;
+    min-height: 300px;
+    box-sizing: border-box !important;
+}
+.frmContato .tituloContato{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.frmContato form{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.frmContato form .inputs{
+    display: flex;
+    width: 49%;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.inputs .input-group{
+    display: flex;
+    flex-direction: column;
+}
+.inputs .input-group label{
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.inputs .input-group input{
+    height: 30px;
+    outline: none;
+    font-size: 1.2rem;
+ }
+
+.frmContato form .textarea{
+    display: flex;
+    width: 49%;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.textarea .textarea-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea .textarea-group textarea{
+    height: 120px;
+    outline: none;
+    font-size: 1.2rem;
+ }
+
+.textarea .textarea-group label{
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.textarea .btn-group{
+    display: flex;
+    justify-content: center;
+}
+.textarea .btn-group .btnContato{
+    font-size: 1.2rem;
+    width: 150px;
+    height: 40px;
+    margin: 15px 20px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.textarea .btn-group .btnContato:hover{
+    background-color: rgb(70, 10, 45);
+    color: white;
+}
+
+@media screen and (max-width: 740px){
+    .frmContato form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .frmContato form .inputs{
+        width: 100%;
+    }
+    .frmContato form .textarea{
+        width: 100%;
+    }
+}
