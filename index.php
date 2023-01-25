@@ -56,37 +56,38 @@
             <article class="site">
                 <h2>Serviços</h2>
                 <div class="txtServicos">
-                    <p>Meu nome é Yoshikage Kira. Tenho 33 anos. Minha casa fica na parte nordeste de Morioh, onde todas
-                        as casas estão, e eu não sou casado. Eu trabalho como funcionário das lojas de departamentos
-                        Kame Yu e chego em casa todos os dias às oito da noite, no máximo.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vero possimus, culpa ratione
+                            magni eos! Voluptas iure, ab nisi delectus obcaecati dolore nesciunt nobis odio dolor
+                            aperiam reprehenderit dicta voluptates? Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</p>
                 </div>
                 <div class="containerServicos">
                     <div class="conteudo">
                         <img src="assets/servicos/servico.jpeg" alt="01">
                         <div class="textoServico">
                             <h3>Serviço 1</h3>
-                            <p>Meu nome é Yoshikage Kira.</p>
+                            <p>Lorem ipsum dolor sit.</p>
                         </div>
                     </div>
                     <div class="conteudo">
                         <img src="assets/servicos/servico.jpeg" alt="01">
                         <div class="textoServico">
                             <h3>Serviço 1</h3>
-                            <p>Meu nome é Yoshikage Kira.</p>
+                            <p>Lorem ipsum dolor sit.</p>
                         </div>
                     </div>
                     <div class="conteudo">
                         <img src="assets/servicos/servico.jpeg" alt="01">
                         <div class="textoServico">
                             <h3>Serviço 1</h3>
-                            <p>Meu nome é Yoshikage Kira.</p>
+                            <p>Lorem ipsum dolor sit.</p>
                         </div>
                     </div>
                     <div class="conteudo">
                         <img src="assets/servicos/servico.jpeg" alt="01">
                         <div class="textoServico">
                             <h3>Serviço 1</h3>
-                            <p>Meu nome é Yoshikage Kira.</p>
+                            <p>Lorem ipsum dolor sit.</p>
                         </div>
                     </div>
                 </div>
@@ -100,8 +101,8 @@
         <section class="equipe">
             <article class="site">
                 <h2>Equipe</h2>
-                <p>Meu nome é Yoshikage Kira. Tenho 33 anos. Minha casa fica na parte nordeste de Morioh, onde todas as
-                    casas estão, e eu não sou casado.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vero possimus, culpa ratione
+                            magni eos! Voluptas iure,</p>
                 <div class="conteudoEquipe">
                     <div>
                         <img src="assets/equipe/equipe1.png" alt="Equipe 01">
