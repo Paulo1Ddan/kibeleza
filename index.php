@@ -29,7 +29,6 @@
             <img src="assets/bannerCarrosel/banner2.png" alt="">
             <img src="assets/bannerCarrosel/banner3.jpg" alt="">
             <img src="assets/bannerCarrosel/banner4.jpg" alt="">
-            <img src="assets/bannerCarrosel/banner6.gif" alt="">
         </section>
         <section class="sobre">
             <article class="site">
